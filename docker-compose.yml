@@ -13,10 +13,10 @@ services:
     labels:
       - com.centurylinklabs.watchtower.enable=true
     ports:
-      - 6082:8082
-      - 6082:8082/udp
-      - 6081:8081
-      - 6081:8081/udp
+      - 8082:8082
+      - 8082:8082/udp
+      - 8081:8081
+      - 8081:8081/udp
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower
